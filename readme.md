@@ -84,3 +84,7 @@ You can download the Visual Studio 2015 sollution in the [release](https://githu
 			* with
 			* `auto base_region<T_container>::operator=(const base_region<T_container2>& reg) -> typename std::enable_if<std::is_same<typename container_traits<T_container2>::nonconst_container, nonconst_container>::value, base_region&>::type {`
 		5. Now you should be able to compile the solution. Remember that you have to redo the procedure for every of `debug`, `release`, `x86` and `x64` options.
+		6. Copy `*.dll` files into the your build folder from
+			* `$(SolutionDir)..\opencv\build\x86\vc14\install\dll\`
+			* `$(SolutionDir)..\suitesparse\build\install\dll\`
+			* `$(SolutionDir)..\fftw`
